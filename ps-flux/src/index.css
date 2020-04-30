@@ -1,0 +1,254 @@
+:root {
+  --main-data-wrapper-width: 1920px;
+  --main-dark-color: #212121;
+  --main-highlight-color: #7a7aff;
+  --main-white-color: white;
+}
+
+@font-face {
+  font-family: Aller;
+  src: url("Fonts/Aller/Aller_Rg.ttf");
+}
+@font-face {
+  font-family: AllerLight;
+  src: url("Fonts/Aller/Aller_Lt.ttf");
+}
+@font-face {
+  font-family: HelveticaNeue;
+  src: url("Fonts/HelveticaNeueThin/HelveticaNeue-Thin.ttf");
+}
+
+/*----------------------------------------------------------*/
+/*                        HEADER                            */
+/*----------------------------------------------------------*/
+
+header {
+  background: #fff;
+  width: 100%;
+  height: 100px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-bottom: 1px solid var(--main-highlight-color);
+}
+
+.logo-wrapper {
+  width: 40%;
+  height: 100%;
+  float: left;
+}
+
+.logo-wrapper-child {
+  width: 65%;
+  height: 65%;
+  margin-left: 20%;
+  margin-top: 2.5%;
+  float: left;
+  background: url("logo_vertikalno.jpg") no-repeat center;
+  background-size: contain;
+  display: block;
+}
+
+.logo-wrapper-child a {
+  height: 100%;
+  display: block;
+}
+
+nav {
+  float: right;
+  width: 60%;
+  height: 100%;
+}
+
+#menu-icon {
+  display: hidden;
+  float: right;
+  background: var(--main-dark-color) url("menu-icon.png") center;
+}
+
+a:hover#menu-icon {
+  background-color: var(--main-highlight-color);
+}
+
+ul {
+  list-style: none;
+  padding-right: 50px;
+}
+
+li {
+  display: inline-block;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.navbar-elements {
+  font-family: Aller;
+  font-size: 16px;
+  -webkit-transition: color 2s, font-size 0.12s;
+  -moz-transition: color 2s, font-size 0.12s;
+  -o-transition: color 2s, font-size 0.12s;
+  transition: color 2s, font-size 0.12s;
+}
+
+.navbar-element {
+  float: right;
+}
+
+.navbar-element:hover {
+  font-weight: bold;
+}
+
+.navbar-element a {
+  text-decoration: none;
+  color: var(--main-dark-color);
+}
+
+/*MEDIA QUERY*/
+@media only screen and (max-width: 640px) {
+  header {
+    position: absolute;
+  }
+
+  #menu-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-top: 30px;
+    margin-right: 30px;
+  }
+
+  nav ul,
+  nav:active ul {
+    display: none;
+    position: absolute;
+    background: white;
+    margin-left: -40%;
+    padding-right: 0px;
+    border-top: 1px solid var(--main-dark-color);
+    border-bottom: 1px solid var(--main-dark-color);
+    top: 100px;
+    width: 100%;
+  }
+
+  nav li {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    float: none;
+    padding: 10px;
+  }
+
+  nav:hover ul {
+    display: block;
+  }
+
+  /* Single brand CONF */
+
+  .single-brand-header-container {
+    height: 400px;
+  }
+
+  .single-brand-info-container {
+    width: 50%;
+  }
+
+  .single-brand-image-container {
+    width: 50%;
+  }
+
+  /* Single brand CONF */
+
+  /* Brands homepage CONF */
+  .brands {
+    width: 100%;
+    height: 1300px;
+    text-align: center;
+  }
+
+  .brands-images-wrapper {
+    width: 80%;
+    height: 800px;
+    margin-top: 100px;
+    display: inline-block;
+  }
+
+  .brand-img-wrapper {
+    width: 20%;
+    height: 100%;
+    float: left;
+    margin-left: 4%;
+    position: relative;
+  }
+
+  .brands-text {
+    font-family: HelveticaNeue;
+    font-size: 17px;
+    width: 70%;
+    height: 350px;
+    text-align: justify;
+    text-align-last: center;
+  }
+
+  .brands-text p {
+    margin-top: 70px;
+  }
+
+  /* Brands homepage CONF */
+
+  /* Foter CONF */
+
+  .footer-left-side-wrapper {
+    width: 100%;
+    height: 70px;
+    float: left;
+  }
+
+  .footer-right-side-wrapper {
+    width: 100%;
+    height: 70px;
+    float: left;
+  }
+
+  /* Foter CONF */
+
+  /* Navbar test CONF */
+
+  .navbar-wrapper-test {
+    display: none;
+  }
+
+  .navbar-wrapper-test-mobile {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .page-content {
+    margin-top: 100px;
+  }
+  /* Navbar test CONF */
+}
+
+/*----------------------------------------------------------*/
+/*                        HEADER END                        */
+/*----------------------------------------------------------*/
+
+.page-not-found {
+  text-align: center;
+}
+
+.state-crud {
+  text-align: center;
+}
+
+.oneli {
+  width: 100%;
+  float: left;
+}
+
+.text-align-center {
+  text-align: center;
+}
