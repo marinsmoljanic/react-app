@@ -1,7 +1,7 @@
 
 ![Image description](https://i.imgur.com/k4Zjn1H.png)
 
-**Slika 1:** Prikaza izbornika na mobilnom zaslonu
+## **Slika 1:** Prikaza izbornika na mobilnom zaslonu
 
 
 
